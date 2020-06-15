@@ -1,16 +1,16 @@
 <div class="contianer-fluid py-3 mb-3">
-    <div class="header-container d-flex">
-        <h3>Activity</h3>
-        <p class="ml-auto mt-auto align-content-end">View timeline / Filter activities</p>
+    <div class="header-container d-flex mb-2">
+        <h3 class="mb-0">Activity</h3>
+        <p class="ml-auto ml-md-3 ml-lg-auto align-content-end mb-0" >View timeline / Filter activities</p>
     </div>
     <div class=" border-bottom border-top">
         <div *ngFor="let video of videos; let i  =index" class="item1 my-3">
             <div class="row">
-                <div class=" col-sm-4 col-md-4">
-                    <img style="width: 100px;" 
+                <div class="col-sm-6 col-md-4 col-lg-6 pt-1">
+                    <img class="img-fluid userimage" 
                     src="{{video.user.profile_image.large}}" />
                 </div>
-                <div class="col-sm-6  col-md-6 mt-3 mt-md-0 detail-container">
+                <div class="col-sm-6  col-md-6 mt-3 mt-md-0 detail-container pt-0 pt-lg-4">
                     <p>{{video.user.name}} comment :</p>
                     <p class="comment">{{video.title}}</p>
                 </div>

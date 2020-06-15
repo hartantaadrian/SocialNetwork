@@ -56,8 +56,16 @@
     display: none;
   }
   .mat-toolbar, .mat-toolbar h1, .mat-toolbar h2, .mat-toolbar h3, .mat-toolbar h4, .mat-toolbar h5, .mat-toolbar h6 {
-    font: 500 2rem Roboto, "Helvetica Neue", sans-serif; 
+    font: 500 1.5rem Roboto, "Helvetica Neue", sans-serif; 
   }
-  
 }
 
+
+@media(min-width:1000px){
+  .sidenav{
+    display: none;
+  }
+  .mat-toolbar, .mat-toolbar h1, .mat-toolbar h2, .mat-toolbar h3, .mat-toolbar h4, .mat-toolbar h5, .mat-toolbar h6 {
+    font: 500 2rem Roboto, "Helvetica Neue", sans-serif; 
+  }
+}

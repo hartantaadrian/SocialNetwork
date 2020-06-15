@@ -1,0 +1,16 @@
+.footer-item-container{
+    color:white
+}
+.breadcrumb{
+    background-color: transparent;
+}
+
+.breadcrumb-item+.breadcrumb-item::before{
+    color: white;
+    margin-right: .2rem;
+}
+
+a{
+    color: white
+}
+

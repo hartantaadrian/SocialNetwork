@@ -1,0 +1,14 @@
+<div class="contianer-fluid py-3 mt-4 ">
+    <div class="header-container d-flex">
+        <h3>Channels</h3>
+        <p class="ml-auto mt-auto align-content-end">View timeline / Filter activities</p>
+    </div>
+    <div class="grid-container border-bottom border-top">
+        <div *ngFor="let video of videos; let i  =index"  class="item1 border my-3">
+            <div>
+                <img style="width: 100px;" 
+                    src="{{video.user.profile_image.large}}" />
+            </div>
+        </div>
+    </div>
+</div>

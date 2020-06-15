@@ -1,0 +1,19 @@
+.breadcrumb{
+    background-color: transparent;
+}
+
+.breadcrumb-item+.breadcrumb-item::before{
+    color: white;
+    margin-right: .3rem;
+}
+
+
+a{
+    color: white
+}
+
+@media(min-width:768px){
+    .breadcrumb-item+.breadcrumb-item::before{
+        margin-right: 1rem;
+    }
+  }

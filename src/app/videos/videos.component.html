@@ -1,0 +1,33 @@
+<div class="contianer-fluid">
+  <div class="d-flex">
+    <h1 class="mb-2">Videos</h1>
+    <p class="mx-auto mt-auto align-content-end">Browse all videos </p>
+  </div>
+
+  <div class="grid-container">
+    <div *ngFor="let video of videos; let i  =index"
+      [style.background]="'url('+ video.preview_photos[0].urls.regular + ')'">
+      <div class="video-detail-container mt-auto mr-auto">
+        <div class="detail-container">
+          <p class="desc">{{video.description}}</p>
+          <p class="name">{{video.user.name}}</p>
+          <p class="views">{{video.cover_photo.likes}} views</p>
+        </div>
+      </div>
+
+    </div>
+    <div class=" upload-container container-fluid bg-transparent border border-light py-5">
+      <div class="row  py-xs-2 py-3 px-xs-2 py-3  text-center text-md-left">
+        <div class=" mx-auto col-md-2">
+          <span class="fa fa-upload  "></span>
+        </div>
+        <div class=" mx-auto col-xs-2 col-md-9 ml-2">
+          <p>Upload <br>
+            Your Own Videos</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

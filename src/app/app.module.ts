@@ -4,7 +4,6 @@ import { HttpClientModule }    from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HeaderComponent } from './header/header.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { VideosComponent } from './videos/videos.component';
 import { ActivityComponent } from './activity/activity.component';
@@ -25,7 +24,6 @@ import { MatListModule } from '@angular/material/list';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     NavBarComponent,
     VideosComponent,
     ActivityComponent,
